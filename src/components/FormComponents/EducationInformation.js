@@ -28,7 +28,7 @@ class EducationInformation extends React.Component {
     return (
       <div className={classes.container}>
         <h3>Education</h3>
-        <label htmlFor="university-name">University name: </label>
+        {/* <label htmlFor="university-name">University name: </label> */}
         <input
           id="university-name"
           type="text"
@@ -36,7 +36,7 @@ class EducationInformation extends React.Component {
           placeholder="University name"
           onChange={this.changeHandler}
         />
-        <label htmlFor="education-city">City: </label>
+        {/* <label htmlFor="education-city">City: </label> */}
         <input
           id="education-city"
           type="text"
@@ -44,7 +44,7 @@ class EducationInformation extends React.Component {
           name="city"
           onChange={this.changeHandler}
         />
-        <label htmlFor="degree">Degree: </label>
+        {/* <label htmlFor="degree">Degree: </label> */}
         <input
           id="degree"
           type="text"
@@ -52,7 +52,7 @@ class EducationInformation extends React.Component {
           name="degree"
           onChange={this.changeHandler}
         />
-        <label htmlFor="subject">Subject: </label>
+        {/* <label htmlFor="subject">Subject: </label> */}
         <input
           id="subject"
           type="text"
@@ -60,7 +60,7 @@ class EducationInformation extends React.Component {
           name="subject"
           onChange={this.changeHandler}
         />
-        <label htmlFor="from">From: </label>
+        {/* <label htmlFor="from">From: </label> */}
         <input
           id="from"
           type="text"
@@ -68,7 +68,7 @@ class EducationInformation extends React.Component {
           name="from"
           onChange={this.changeHandler}
         />
-        <label htmlFor="to">To: </label>
+        {/* <label htmlFor="to">To: </label> */}
         <input
           id="to"
           type="text"

@@ -1,11 +1,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 5px 20px 5px 20px;
+  width: 100%;
+  max-width: 750px;
 }
 
 .container > label,
-input {
+input,
+button {
   margin: 0px 10px 0px 10px;
 }
 
@@ -15,5 +18,5 @@ input {
 }
 
 h3 {
-  margin: 10px 10px 10px 10px;
+  margin: 5px 10px 10px 10px;
 }

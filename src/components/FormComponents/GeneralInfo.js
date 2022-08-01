@@ -6,10 +6,10 @@ class GeneralInformation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
+      firstName: 'First',
+      lastName: 'Last',
+      email: 'email@email.com',
+      phone: '123-456-7890',
     };
 
     this.changeHandler = this.changeHandler.bind(this);
@@ -26,7 +26,7 @@ class GeneralInformation extends React.Component {
     return (
       <div className={classes.container}>
         <h3>Personal Information</h3>
-        <label htmlFor="first-name">First Name: </label>
+        {/* <label htmlFor="first-name">First Name: </label> */}
         <input
           id="first-name"
           type="text"
@@ -34,7 +34,7 @@ class GeneralInformation extends React.Component {
           name="firstName"
           onChange={this.changeHandler}
         />
-        <label htmlFor="last-name">Last Name: </label>
+        {/* <label htmlFor="last-name">Last Name: </label> */}
         <input
           id="last-name"
           type="text"
@@ -42,7 +42,7 @@ class GeneralInformation extends React.Component {
           name="lastName"
           onChange={this.changeHandler}
         />
-        <label htmlFor="email">Email: </label>
+        {/* <label htmlFor="email">Email: </label> */}
         <input
           id="email"
           type="email"
@@ -50,7 +50,7 @@ class GeneralInformation extends React.Component {
           name="email"
           onChange={this.changeHandler}
         />
-        <label htmlFor="phone">Phone Number: </label>
+        {/* <label htmlFor="phone">Phone Number: </label> */}
         <input
           type="text"
           placeholder="Phone number"

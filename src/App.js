@@ -1,8 +1,9 @@
 import React from 'react';
-import './App.css';
-import GeneralInformation from './components/GeneralInfo';
-import Experience from './components/Experience';
-import EducationInformation from './components/EducationInformation';
+import classes from './App.module.css';
+import GeneralInformation from './components/FormComponents/GeneralInfo';
+import Experience from './components/FormComponents/Experience';
+import EducationInformation from './components/FormComponents/EducationInformation';
+import Resume from './components/ResumeComponents/Resume';
 
 class App extends React.Component {
   constructor(props) {
@@ -54,13 +55,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className={classes.container}>
         <GeneralInformation getGeneralInfo={this.getGeneralInfo} />
         <Experience getExperience={this.getExperience} />
         <EducationInformation getEducation={this.getEducation} />
-        {/* <Resume /> */}
+        <Resume stateObjects={this.state} />
         {/* <Controls /> */}
-      </>
+      </div>
     );
   }
 }
