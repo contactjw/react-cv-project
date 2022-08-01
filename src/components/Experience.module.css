@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container > label,
+input {
+  margin: 0px 10px 0px 10px;
+}
+
+.container input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 10px 10px 10px 10px;
+}
