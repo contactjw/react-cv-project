@@ -32,6 +32,7 @@ class EducationInformation extends React.Component {
         <input
           id="university-name"
           type="text"
+          name="university"
           placeholder="University name"
           onChange={this.changeHandler}
         />
@@ -40,6 +41,7 @@ class EducationInformation extends React.Component {
           id="education-city"
           type="text"
           placeholder="City"
+          name="city"
           onChange={this.changeHandler}
         />
         <label htmlFor="degree">Degree: </label>
@@ -47,6 +49,7 @@ class EducationInformation extends React.Component {
           id="degree"
           type="text"
           placeholder="Degree"
+          name="degree"
           onChange={this.changeHandler}
         />
         <label htmlFor="subject">Subject: </label>
@@ -54,6 +57,7 @@ class EducationInformation extends React.Component {
           id="subject"
           type="text"
           placeholder="Subject"
+          name="subject"
           onChange={this.changeHandler}
         />
         <label htmlFor="from">From: </label>
@@ -61,6 +65,7 @@ class EducationInformation extends React.Component {
           id="from"
           type="text"
           placeholder="From"
+          name="from"
           onChange={this.changeHandler}
         />
         <label htmlFor="to">To: </label>
@@ -68,8 +73,12 @@ class EducationInformation extends React.Component {
           id="to"
           type="text"
           placeholder="To"
+          name="to"
           onChange={this.changeHandler}
         />
+        <button onClick={() => this.props.getEducation(this.state)}>
+          Submit
+        </button>
       </div>
     );
   }

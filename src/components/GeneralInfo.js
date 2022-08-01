@@ -57,6 +57,9 @@ class GeneralInformation extends React.Component {
           name="phone"
           onChange={this.changeHandler}
         />
+        <button onClick={() => this.props.getGeneralInfo(this.state)}>
+          Submit
+        </button>
       </div>
     );
   }
